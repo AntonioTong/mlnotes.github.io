@@ -7,16 +7,18 @@ use_math: true
 ---
 
 A linear classifier, 
+
 $$
 \begin{align*}
   wx+b=y
 \end{align*}
 $$
-by waights $$w$$ and bias $$b$$, the output then passed through a soft max function $$s(y)$$
+
+by waights $$w$$ and bias $$b$$, the output then passed through a soft max function $$s(y)$$ .
 
 $$
 \begin{align*}
-  \s(y_i) = \dfrac{e^(y_i)}}{\sum\limits_(j)e^(y_j)}
+  s(y_i) = \dfrac{e^(y_i)}}{\sum\limits_(j)e^(y_j)}
 \end{align*}
 $$
 
