@@ -22,7 +22,7 @@ $$
 \end{align*}
 $$
 
-The softmax function will turn scores into probabilities. The identified class will have the highest probability, and the probability values of all classes add up to 1: $\sum_{j}^{n} s(y_j)=1$
+The softmax function will turn scores into probabilities. The identified class will have the highest probability, and the probability values of all classes add up to 1: $\sum_{j}^{n} s(y_j) =1$
 
 {% highlight ruby %}
 def print_hi(name)
