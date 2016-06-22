@@ -10,19 +10,31 @@ A linear classifier is presented by a simple logistic function with waights $w$ 
 
 $$
 \begin{align*}
-  wx+b=y
+  wx+b=g
 \end{align*}
 $$
 
-The output $y$ then passed through a softmax function $s(y)$: 
+The output $y$ then obtained by pass the classifier through a softmax function $s(g)$: 
 
 $$
 \begin{align*}
-  s(y_i) = \frac{e^{y_i}}{\sum_{j} e^{y_j}}
+  s(g_i) = \frac{e^{g_i}}{\sum_{j} e^{g_j}}
 \end{align*}
 $$
 
-The softmax function will turn scores into probabilities. The identified class will have the highest probability, and the probability values of all classes add up to 1: $$\sum_{j}^{n} s(y_j) =1$$
+The softmax function will turn scores into probabilities. The identified class will have the highest probability, and the probability values of all classes add up to 1: $$\sum_{g}^{n} s(g_j) =1$$ .
+
+Assume the estimated output is $$S=\left[0.7, 0.2, 0.1 \right]^T$$, and the actuall desired output is $$L=\left(1, 0, 0 \right]^T$$. A cross entropy function is defined:
+
+$$
+\begin{align*}
+  D(S,L) = -\sum_{i} L_ilog(S_i)
+\end{align*}
+$$
+
+To train such a linear classifier so that the waights $w$ and bias $b$ are properlly tuned to make correct classification given new data, a cross entropy functoin is used:
+
+ 
 
 {% highlight ruby %}
 def print_hi(name)
