@@ -8,8 +8,9 @@ use_math: true
 
 Single classification
 
-{% highlight ruby %}
+
 $$
+{% highlight ruby %}
 \begin{align*}
   & \phi(x,y) = \phi \left(\sum_{i=1}^n x_ie_i, \sum_{j=1}^n y_je_j \right)
   = \sum_{i=1}^n \sum_{j=1}^n x_i y_j \phi(e_i, e_j) = \\
@@ -24,8 +25,9 @@ $$
       y_n
     \end{array} \right)
 \end{align*}
-$$
 {% endhighlight %}
+$$
+
 
 Jekyll also offers powerful support for code snippets:
 
