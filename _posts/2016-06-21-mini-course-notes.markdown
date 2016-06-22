@@ -48,6 +48,13 @@ $$
 \end{align*}
 $$
  
+Now this optimization problem can be solved by gradient descent:
+
+$$
+\begin{align*}
+  -\alpha\Delta\mathcal{L}(w_1,...,w_i,b_1,...,b_i)
+\end{align*}
+$$
 
 {% highlight ruby %}
 def print_hi(name)
