@@ -6,7 +6,7 @@ categories: jekyll update
 use_math: true
 ---
 
-A linear classifier, 
+A linear classifier is presented by a simple logistic function with waights $w$ and bias $b$ parameters. 
 
 $$
 \begin{align*}
@@ -14,7 +14,7 @@ $$
 \end{align*}
 $$
 
-by waights $w$ and bias $b$, the output then passed through a soft max function $s(y)$ .
+The output $y$ then passed through a softmax function $s(y)$: 
 
 $$
 \begin{align*}
@@ -22,8 +22,7 @@ $$
 \end{align*}
 $$
 
-
-Jekyll also offers powerful support for code snippets:
+The softmax function will turn scores into probabilities. The identified class will have the highest probability, and the probability values of all classes add up to 1: ${\sum_{j}^{n} s(y_j)}=1 $
 
 {% highlight ruby %}
 def print_hi(name)
