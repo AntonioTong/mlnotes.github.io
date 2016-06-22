@@ -18,7 +18,7 @@ by waights $w$ and bias $b$, the output then passed through a soft max function 
 
 $$
 \begin{align*}
-  s(y_i) = \dfrac{e^(y_i)}}{\sum_{j} e^(y_j)}
+  s(y_i) = \frac{e^{y_i}}{\sum_{j} e^{y_j}}
 \end{align*}
 $$
 
